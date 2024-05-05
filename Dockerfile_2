@@ -1,0 +1,12 @@
+FROM nginx
+ENV VITE_ENV=development
+
+COPY ./dist /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+EXPOSE 3000
+
+# 把打包好的送至Docker
+
+# docker build -t psplover16/initvue-20240504 -f Dockerfile_2 .  利用Dockerfile_2 打包
+# docker run -it -d -p 0.0.0.0:7777:3000 --name myvueweb myvueweb

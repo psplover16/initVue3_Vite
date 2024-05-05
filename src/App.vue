@@ -1,5 +1,8 @@
 <template>
   <!-- <example msg="Vite + Vue" /> -->
+  <router-link to="./">index</router-link>
+  <br>
+  <router-link to="/example1">example1</router-link>
   <router-view />
 </template>
 

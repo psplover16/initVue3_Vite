@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, createWebHashHistory } from "vue-router"; //引用 vue-router 的 createRouter() 與 createWebHistory()。
 import { getToken } from "@/utils/cookie.js";
-let history = createWebHashHistory(); //使用 createWebHistory() 建立 history。
+let history = createWebHistory(); //使用 createWebHistory() 建立 history。
 let routes = [
   //將所有 route 設定定義在 routes Object Array。
   {
